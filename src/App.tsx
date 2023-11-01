@@ -1,14 +1,14 @@
-import "./App.scss"
-import { ReactComponent as Add } from "./assets/icons/add.svg"
-import AddEditTaskForm from "./components/AddEditTaskForm"
-import Button from "./components/Button"
-import DeleteModal from "./components/DeleteModal"
-import TaskCard from "./components/TaskCard"
-import { taskList } from "./siteData/taskList"
+import "./App.scss";
+import { ReactComponent as Add } from "./assets/icons/add.svg";
+import AddEditTaskForm from "./components/AddEditTaskForm";
+import Button from "./components/Button";
+import DeleteModal from "./components/DeleteModal";
+import TaskCard from "./components/TaskCard";
+import { taskList } from "./data/taskList";
 
 const App = () => {
-  const showAddEditModal = false
-  const showDeleteModal = false
+  const showAddEditModal = false;
+  const showDeleteModal = false;
   return (
     <div className="container">
       <div className="page-wrapper">
@@ -25,7 +25,7 @@ const App = () => {
       {showAddEditModal && <AddEditTaskForm />}
       {showDeleteModal && <DeleteModal />}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
